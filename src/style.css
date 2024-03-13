@@ -49,7 +49,7 @@ nav {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #000;
   opacity: 2;
   overflow-x: hidden;
   padding-top: 60px;
@@ -111,6 +111,8 @@ nav {
   padding: 30px;
 }
 .card-part {
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -150,11 +152,11 @@ nav {
 .card:hover img {
   transform: scale(1.1);
 }
-
 .card:hover .text {
   opacity: 1;
 }
-.sec-3 {
+.card:hover {
+  cursor: pointer;
 }
 .upcoming-section {
   display: flex;
@@ -164,9 +166,9 @@ nav {
 
 .upcoming-item {
   position: relative;
-  width: 1200px; /* Adjust width as needed */
-  height: 500px; /* Adjust height as needed */
-  margin-bottom: 20px; /* Adjust margin as needed */
+  width: 1200px;
+  height: 500px;
+  margin-bottom: 20px;
 }
 
 .background-image {
@@ -372,12 +374,17 @@ input[type="submit"]:hover {
     width: 80px;
     margin-top: -10px;
   }
-  .card-part {
-    display: block;
-    text-align: center;
-  }
+}
+@media screen and (max-width: 700px) {
   .card {
     padding: 10px;
+    width: auto;
+  }
+  .card-part {
+    display: inline-block;
+  }
+  .upcoming-item {
+    height: 400px;
   }
 }
 @media screen and (min-width: 1003px) {
