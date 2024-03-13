@@ -74,7 +74,7 @@ function HomePage() {
 
       <section className="sec-2">
         <div className="container">
-          <h1 style={{ fontSize: "40px" }}>
+          <h1 className="sec-2-text">
             <b>VIP SPORT EVENTS AND HOSPITALITY</b>
           </h1>
           <a>

@@ -104,9 +104,14 @@ nav {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
+.sec-2-text {
+  margin-top: 10px;
+  font-size: 35px;
+}
 .sec-2 .container a {
   max-width: 170px;
 }
+
 .card-container {
   padding: 30px;
 }
@@ -365,6 +370,14 @@ input[type="submit"]:hover {
   .sec-1 .img-part .content-part {
     display: none;
   }
+  .sec-2-text {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .container a {
+    margin-top: 10px;
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 860px) {
@@ -385,6 +398,12 @@ input[type="submit"]:hover {
   }
   .upcoming-item {
     height: 400px;
+  }
+  .text-overlay h2 {
+    font-size: 30px;
+  }
+  .text-overlay a {
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 1003px) {
