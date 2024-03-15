@@ -16,7 +16,6 @@ const LoginPage = () => {
             <h4>Home / My Account</h4>
           </center>
         </div>
-        <div id="add_err2"></div>
         <center>
           <h3>Login</h3>
         </center>
@@ -44,6 +43,13 @@ const LoginPage = () => {
             </form>
           </center>
         </div>
+      </section>
+      <section className="sec-7" id="int">
+        <center>
+          <p style={{ color: "#777", fontSize: "15px" }}>
+            &copy; 2024 SPORTS | DESIGNED BY SPORTS TEAM
+          </p>
+        </center>
       </section>
     </section>
   );

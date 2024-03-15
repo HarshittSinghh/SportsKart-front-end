@@ -1,8 +1,8 @@
 {
-  "name": "login",
+  "name": "SportsKart",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://localhost:3000",
+  "proxy": "https://localhost:0000",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
