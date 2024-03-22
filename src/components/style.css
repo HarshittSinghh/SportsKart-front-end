@@ -385,7 +385,7 @@ input[type="submit"]:hover {
 }
 @media screen and (max-width: 1002px) {
   .video-text {
-    top: 35%;
+    top: 50%;
     left: 50%;
   }
   .video-text h1 {
@@ -431,7 +431,7 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 700px) {
   .video-text {
-    top: 18%;
+    top: 30%;
     left: 50%;
   }
   .video-text h1 {
@@ -467,13 +467,13 @@ input[type="submit"]:hover {
     left: 80%;
   }
   .img-part .square {
-    top: 15%;
+    top: 30%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
   }
   .sec-1 .img-part .content-part {
-    top: 15%;
+    top: 30%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
@@ -481,5 +481,9 @@ input[type="submit"]:hover {
   }
   .sec-1 .img-part .content-part h1 {
     font-size: 30px;
+  }
+  .btn {
+    padding: 5px 7px;
+    border-radius: 50px;
   }
 }
