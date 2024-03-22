@@ -383,9 +383,10 @@ input[type="submit"]:hover {
   font-size: 20px;
   cursor: pointer;
 }
+/*---------- Media Queary for Tablet------------ */
 @media screen and (max-width: 1002px) {
   .video-text {
-    top: 50%;
+    top: 25%;
     left: 50%;
   }
   .video-text h1 {
@@ -427,11 +428,27 @@ input[type="submit"]:hover {
     margin-top: 10px;
     font-size: 13px;
   }
+  .img-part .square {
+    top: 20%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  .sec-1 .img-part .content-part {
+    top: 20%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+  .sec-1 .img-part .content-part h1 {
+    font-size: 30px;
+  }
 }
-
+/*-------------- Smartphones (portrait and landscape) ----------- */
 @media screen and (max-width: 700px) {
   .video-text {
-    top: 30%;
+    top: 20%;
     left: 50%;
   }
   .video-text h1 {
@@ -467,13 +484,13 @@ input[type="submit"]:hover {
     left: 80%;
   }
   .img-part .square {
-    top: 30%;
+    top: 17%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
   }
   .sec-1 .img-part .content-part {
-    top: 30%;
+    top: 17%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
