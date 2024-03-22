@@ -444,6 +444,10 @@ input[type="submit"]:hover {
   .sec-1 .img-part .content-part h1 {
     font-size: 30px;
   }
+  .cart {
+    top: 93%;
+    left: 87%;
+  }
 }
 /*-------------- Smartphones (portrait and landscape) ----------- */
 @media screen and (max-width: 700px) {
@@ -480,8 +484,8 @@ input[type="submit"]:hover {
     height: auto;
   }
   .cart {
-    top: 93%;
-    left: 80%;
+    top: 91%;
+    left: 82%;
   }
   .img-part .square {
     top: 17%;
