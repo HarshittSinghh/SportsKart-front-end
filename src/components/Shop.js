@@ -1,8 +1,19 @@
 import React from "react";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import image31 from "./IMG/asset 31.jpeg";
 const SportsProducts = () => {
   return (
     <>
+      <section className="sec-1">
+        <div className="img-part">
+          <img src={image31} alt="Background" />
+          <div className="content-part">
+            <h1>SHOP NOW!!</h1>
+          </div>
+          <div className="square"></div>
+        </div>
+      </section>
       <div className="row">
         {/* Product 1: Football */}
         <div className="col-md-4">
@@ -50,7 +61,6 @@ const SportsProducts = () => {
           </div>
         </div>
 
-        {/* Product 3: Tennis Racket */}
         <div className="col-md-4">
           <div className="card" style={{ height: "400px" }}>
             <img
@@ -143,9 +153,15 @@ const SportsProducts = () => {
             </div>
           </div>
         </div>
+        <div className="cart">
+          <div className="cart-icon">
+            <FontAwesomeIcon className="icon" icon={faShoppingCart} />
+          </div>
+        </div>
       </div>
       <br />
       <br />
+
       <section className="sec-7" id="int">
         <center>
           <p style={{ color: "#777", fontSize: "15px" }}>
