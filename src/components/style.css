@@ -369,15 +369,21 @@ input[type="submit"]:hover {
   height: 100%;
   object-fit: cover;
 }
-.coming-soon::before {
+.coming-soon video::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adjusted opacity for a darker background */
 }
+
 .coming-soon-text {
   position: absolute;
   top: 50%;
@@ -386,16 +392,33 @@ input[type="submit"]:hover {
   text-align: center;
 }
 .coming-soon-text h1 {
-  background-image: linear-gradient(
-    to right,
-    rgba(67, 67, 67, 0.7) 0%,
-    rgba(0, 0, 0, 0.7) 100%
-  );
   border-radius: 50px;
   padding: 50px;
-  color: yellowgreen;
+  animation: colorAnimation 3s infinite; /* Adjust duration as needed */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #ccc;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
+@keyframes colorAnimation {
+  0% {
+    color: #000;
+  }
+  25% {
+    color: #fff;
+  }
+  50% {
+    color: #4e54c8;
+  }
+  75% {
+    color: #fff;
+  }
+  100% {
+    color: coral;
+  }
+}
+
 /*---------- Media Queary for Tablet------------ */
 @media screen and (max-width: 1002px) {
   .video-text {
@@ -465,7 +488,7 @@ input[type="submit"]:hover {
 /*-------------- Smartphones (portrait and landscape) ----------- */
 @media screen and (max-width: 700px) {
   .video-text {
-    top: 23%;
+    top: 19%;
     left: 50%;
   }
   .video-text h1 {
@@ -517,6 +540,6 @@ input[type="submit"]:hover {
     border-radius: 100px;
   }
   .coming-soon-text h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
