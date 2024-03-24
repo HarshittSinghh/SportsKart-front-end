@@ -8,7 +8,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 nav {
-  background: #000;
+  background: #1a1c1f;
   color: #fff;
   padding: 20px;
   display: flex;
@@ -18,29 +18,7 @@ nav {
   z-index: 99;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.nav-bar {
-  display: inline-flex;
-  list-style: none;
-  margin-left: 40%;
-  background-color: #000;
-}
-.nav-bar h2 {
-  background-color: #000;
-}
-.nav-bar li {
-  position: relative;
-  margin-left: 10%;
-}
-.nav-bar li a {
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
-}
-.nav-bar li a:hover {
-  color: red;
-  border-radius: 5%;
-  transition: 0.3s;
-}
+
 .video-landing {
   width: 100%;
   min-height: 20%;
@@ -61,7 +39,7 @@ video {
   font-size: 50px;
 }
 .video-text h2 {
-  font-size: 40px;
+  font-size: 45px;
 }
 .video-text h5 {
   font-size: 30px;
@@ -90,13 +68,6 @@ video {
 }
 .side-nav a:hover {
   color: red;
-}
-.side-nav .btn-close {
-  position: absolute;
-  top: 0;
-  right: 22px;
-  font-size: 39px;
-  margin-left: 50px;
 }
 .sec-1 .img-part img {
   background-size: cover;
@@ -383,10 +354,52 @@ input[type="submit"]:hover {
   font-size: 20px;
   cursor: pointer;
 }
+.btn {
+  border-radius: 50px;
+}
+.coming-soon {
+  width: 100%;
+  height: 100%;
+}
+.coming-soon video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coming-soon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+}
+.coming-soon-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.coming-soon-text h1 {
+  background-image: linear-gradient(
+    to right,
+    rgba(67, 67, 67, 0.7) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  border-radius: 50px;
+  padding: 50px;
+  color: yellowgreen;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
 /*---------- Media Queary for Tablet------------ */
 @media screen and (max-width: 1002px) {
   .video-text {
-    top: 25%;
+    top: 40%;
     left: 50%;
   }
   .video-text h1 {
@@ -452,7 +465,7 @@ input[type="submit"]:hover {
 /*-------------- Smartphones (portrait and landscape) ----------- */
 @media screen and (max-width: 700px) {
   .video-text {
-    top: 20%;
+    top: 30%;
     left: 50%;
   }
   .video-text h1 {
@@ -504,7 +517,9 @@ input[type="submit"]:hover {
     font-size: 30px;
   }
   .btn {
-    padding: 5px 7px;
-    border-radius: 50px;
+    border-radius: 100px;
+  }
+  .coming-soon-text h1 {
+    font-size: 25px;
   }
 }

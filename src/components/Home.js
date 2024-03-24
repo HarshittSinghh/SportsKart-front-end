@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"; // Importing the CSS file directly
+import "./style.css";
 import video from "./IMG/video.mp4";
 import image40 from "./IMG/asset 40.jpg";
 import footballImage from "./IMG/football.jpg";
@@ -17,15 +17,9 @@ const Home = () => {
       <section className="video-landing">
         <video src={video} autoPlay muted loop />
         <div className="video-text">
-          <h1 style={{ color: "#ddd" }}>Revolutionize Your Life</h1>
-          <h2 style={{ color: "#ddd" }}>Unleash Potential</h2>
-          <h5 style={{ color: "#ff3333" }}>Join Our Community Today</h5>
+          <h1 style={{ color: "lightblue" }}>Revolutionize Your Life</h1>
 
-          <input
-            type="button"
-            value="Get Started"
-            className="btn  btn-danger"
-          />
+          <h2 style={{ color: "coral" }}>Unleash Potential</h2>
         </div>
       </section>
       <section className="sec-2">
@@ -33,12 +27,12 @@ const Home = () => {
           <h1 className="sec-2-text">
             <b>Thrilling Sports Showdowns: Witness the Action Live!</b>
           </h1>
-          <a>
+          <p>
             Experience the thrill of live sports events! Witness breathtaking
             performances, cheer for your favorite teams, and immerse yourself in
             the electrifying atmosphere. Don’t miss out on these unforgettable
             moments!
-          </a>
+          </p>
         </div>
         <div className="card-container">
           <div className="card-part">
@@ -165,12 +159,16 @@ const Home = () => {
             <div className="background-image">
               <img src={image40} alt="Background" />
               <div className="text-overlay">
-                <h2>UPCOMING EVENTS</h2>
-                <a href="#">Click Here to see more events!</a>
+                <h3 style={{ fontSize: "45px" }}>Join Our Community Today</h3>
+
+                <input
+                  type="button"
+                  value="Let's Get Started"
+                  className="btn  btn-danger"
+                />
               </div>
             </div>
           </div>
-          {/* Add more upcoming items as needed */}
         </section>
       </section>
       <section className="sec-7" id="int">
