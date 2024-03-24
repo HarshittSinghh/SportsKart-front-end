@@ -215,9 +215,9 @@ video {
   padding: 20px;
 }
 
-.text-overlay h2 {
+.text-overlay h3 {
   margin: 0;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .text-overlay a {
@@ -465,7 +465,7 @@ input[type="submit"]:hover {
 /*-------------- Smartphones (portrait and landscape) ----------- */
 @media screen and (max-width: 700px) {
   .video-text {
-    top: 30%;
+    top: 23%;
     left: 50%;
   }
   .video-text h1 {
@@ -487,11 +487,8 @@ input[type="submit"]:hover {
   .upcoming-item {
     height: 400px;
   }
-  .text-overlay h2 {
+  .text-overlay h3 {
     font-size: 30px;
-  }
-  .text-overlay a {
-    font-size: 15px;
   }
   .sec-4 {
     height: auto;

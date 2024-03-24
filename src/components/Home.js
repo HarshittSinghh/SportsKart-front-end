@@ -159,7 +159,7 @@ const Home = () => {
             <div className="background-image">
               <img src={image40} alt="Background" />
               <div className="text-overlay">
-                <h3 style={{ fontSize: "45px" }}>Join Our Community Today</h3>
+                <h3>Join Our Community Today</h3>
 
                 <input
                   type="button"
