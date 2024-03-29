@@ -2,26 +2,35 @@ import React, { useState } from "react";
 import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope, faKey } from "@fortawesome/free-solid-svg-icons";
-import "./style.css";
 import { useNavigate } from "react-router-dom";
 
 function Signup() {
+  const navigate = useNavigate();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  async function submit(e) {
     e.preventDefault();
-    axios
-      .post("http://localhost:3000/register", { name, email, password })
-      .then((result) => {
-        console.log(result);
-        alert("You are Successfully Registered");
-        navigate("/Login");
-      })
-      .catch((err) => alert(err));
-  };
+
+    try {
+      const res = await axios.post("http://localhost:8000/signup", {
+        name,
+        email,
+        password,
+      });
+
+      if (res.data === "exist") {
+        alert("User already exists");
+      } else if (res.data === "notexist") {
+        alert("Successfully created account!");
+        navigate("/Login", { state: { id: name } });
+      }
+    } catch (error) {
+      console.error(error);
+      alert("An error occurred. Please try again.");
+    }
+  }
 
   return (
     <>
@@ -40,14 +49,16 @@ function Signup() {
           </center>
           <div style={{ padding: "50px 30px" }}>
             <center>
-              <form action="/register" onSubmit={handleSubmit} className="form">
+              <form onSubmit={submit} className="form">
                 <FontAwesomeIcon icon={faUser} className="icon" />
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Name"
+                  value={name}
                   onChange={(e) => setName(e.target.value)}
+                  required
                 />
                 <br />
                 <br />
@@ -57,7 +68,9 @@ function Signup() {
                   id="email"
                   name="email"
                   placeholder="Email"
+                  value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  required
                 />
                 <br />
                 <br />
@@ -67,7 +80,9 @@ function Signup() {
                   id="password"
                   name="password"
                   placeholder="Password"
+                  value={password}
                   onChange={(e) => setPassword(e.target.value)}
+                  required
                 />
                 <br />
                 <br />
@@ -87,4 +102,5 @@ function Signup() {
     </>
   );
 }
+
 export default Signup;

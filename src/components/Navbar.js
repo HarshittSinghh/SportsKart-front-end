@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
-import logo from "./IMG/1.png";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-black">

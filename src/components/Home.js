@@ -18,7 +18,6 @@ const Home = () => {
         <video src={video} autoPlay muted loop />
         <div className="video-text">
           <h1 style={{ color: "lightblue" }}>Revolutionize Your Life</h1>
-
           <h2 style={{ color: "coral" }}>Unleash Potential</h2>
         </div>
       </section>

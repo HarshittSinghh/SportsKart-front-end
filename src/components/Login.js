@@ -1,34 +1,40 @@
+// Login.js
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faKey } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
-const LoginPage = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+function Login() {
   const navigate = useNavigate();
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  const handlePasswordChange = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleLogin = (e) => {
+  async function submit(e) {
     e.preventDefault();
-    axios
-      .post("http://localhost:3000/login", { email, password })
-      .then((result) => {
-        console.log(result);
-        if (result.data === "Success") {
-          navigate("/Home");
-        }
-      })
-      .catch((err) => alert(err));
-  };
+
+    try {
+      const res = await axios.post("http://localhost:8000/", {
+        email,
+        password,
+      });
+
+      if (res.data === "success") {
+        navigate("/", { state: { id: email } }); // Redirect to home if login successful
+      } else if (res.data === "notexist") {
+        alert("User not found. Please sign up.");
+        navigate("/signup");
+      } else if (res.data === "invalidpassword") {
+        alert("Wrong password. Please try again.");
+      } else {
+        alert("An error occurred. Please try again later.");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Error occurred! Please try again later!:", error);
+    }
+  }
 
   return (
     <div>
@@ -43,16 +49,18 @@ const LoginPage = () => {
             </center>
           </div>
           <center>
+            <br />
+            <br />
             <h3>Login</h3>
           </center>
           <div style={{ padding: "50px 30px" }}>
             <center>
-              <form onSubmit={handleLogin}>
+              <form onSubmit={submit}>
                 <FontAwesomeIcon icon={faEnvelope} className="fa icon" />
                 <input
                   type="email"
                   value={email}
-                  onChange={handleEmailChange}
+                  onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
                   required
                 />
@@ -62,20 +70,17 @@ const LoginPage = () => {
                 <input
                   type="password"
                   value={password}
-                  onChange={handlePasswordChange}
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
                   required
                 />
                 <br />
                 <br />
-                <input type="checkbox" /> Remember Me
-                <br />
-                <br />
-                <input type="submit" value="Sign in" />
+                <input type="submit" value="Signin" />
                 <br />
                 <br />
                 <br />
-                <a href="register.html">Create an Account</a>
+                <Link to="/signup">Create an Account</Link>
               </form>
             </center>
           </div>
@@ -90,6 +95,6 @@ const LoginPage = () => {
       </section>
     </div>
   );
-};
+}
 
-export default LoginPage;
+export default Login;
