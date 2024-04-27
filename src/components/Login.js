@@ -21,7 +21,7 @@ function Login() {
       });
 
       if (res.data === "success") {
-        navigate("/", { state: { id: email } }); // Redirect to home if login successful
+        navigate("/profile", { state: { id: email } }); // Redirect to home if login successful
       } else if (res.data === "notexist") {
         alert("User not found. Please sign up.");
         navigate("/signup");

@@ -23,7 +23,7 @@ function Signup() {
       if (res.data === "exist") {
         alert("User already exists");
       } else if (res.data === "notexist") {
-        alert("Successfully created account!");
+        window.alert("Successfully created account!");
         navigate("/Login", { state: { id: name } });
       }
     } catch (error) {
@@ -45,6 +45,8 @@ function Signup() {
             </center>
           </div>
           <center>
+            <br />
+            <br />
             <h3>Sign Up</h3>
           </center>
           <div style={{ padding: "50px 30px" }}>

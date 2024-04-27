@@ -34,120 +34,106 @@ const Home = () => {
           </p>
         </div>
         <div className="card-container">
-          <div className="card-part">
-            <div className="card">
-              <img src={footballImage} alt="Football" />
-              <div className="text">
-                <p>
-                  <h2>Football</h2>
-                  <br />A thrilling sport that unites teams in a quest for
-                  victory, blending athleticism, strategy, and passion on the
-                  field, captivating fans worldwide
-                </p>
-              </div>
-            </div>
-
-            <div className="card">
-              <img src={rugbyImage} alt="Rugby" />
-              <div className="text">
-                <p>
-                  <h2>Rugby</h2>
-                  <br />A dynamic sport epitomizing strength, teamwork, and
-                  strategy, where players engage in fierce battles on the field,
-                  showcasing athleticism and camaraderie
-                </p>
-              </div>
-            </div>
-
-            <div className="card">
-              <img src={horseRaceImage} alt="Horse Race" />
-              <div className="text">
-                <p>
-                  <h2>Horse Riding</h2>
-                  <br />A graceful pursuit where riders and horses form a unique
-                  bond, navigating trails and arenas with elegance, skill, and
-                  mutual trust
-                </p>
-              </div>
+          <div className="card">
+            <img src={footballImage} alt="Football" />
+            <div className="text">
+              <h2>Football</h2>
+              <p>
+                A thrilling sport that unites teams in a quest for victory,
+                blending athleticism, strategy, and passion on the field,
+                captivating fans worldwide
+              </p>
             </div>
           </div>
-          <div className="card-part">
-            <div className="card">
-              <img src={tennisImage} alt="Tennis" />
-              <div className="text">
-                <p>
-                  <h2>Tennis</h2>
-                  <br /> A fast-paced game of skill and precision, played on
-                  courts worldwide, where athletes showcase agility, power, and
-                  mental focus in thrilling matches
-                </p>
-              </div>
+          <div className="card">
+            <div className="text">
+              <h2>Rugby</h2>
+              <p>
+                A dynamic sport epitomizing strength, teamwork, and strategy,
+                where players engage in fierce battles on the field, showcasing
+                athleticism and camaraderie
+              </p>
             </div>
-
-            <div className="card">
-              <img src={golfImage} alt="Golf" />
-              <div className="text">
-                <p>
-                  <h2>Golf</h2>
-                  <br /> A serene sport played amidst picturesque landscapes,
-                  where players demonstrate precision, strategy, and
-                  concentration, aiming for the perfect shot across lush
-                  fairways and challenging greens.
-                </p>
-              </div>
-            </div>
-
-            <div className="card">
-              <img src={formulaOneImage} alt="Formula One" />
-              <div className="text">
-                <p>
-                  <h2> Formula One </h2> <br />
-                  The pinnacle of motorsport, featuring cutting-edge technology
-                  and lightning-fast cars racing on iconic tracks worldwide,
-                  thrilling fans with speed, skill, and adrenaline-fueled
-                  competition
-                </p>
-              </div>
+            <img src={rugbyImage} alt="Rugby" />
+          </div>
+          <div className="card">
+            <img src={horseRaceImage} alt="Horse Race" />
+            <div className="text">
+              <h2>Horse Riding</h2>
+              <p>
+                A graceful pursuit where riders and horses form a unique bond,
+                navigating trails and arenas with elegance, skill, and mutual
+                trust
+              </p>
             </div>
           </div>
-
-          <div className="card-part">
-            <div className="card">
-              <img src={swimmingImage} alt="Swimming" />
-              <div className="text">
-                <p>
-                  <h2>Swimming </h2>
-                  <br />A graceful sport that embraces the water, showcasing
-                  athleticism, endurance, and technique as swimmers glide
-                  through pools with fluidity, power, and determination.
-                </p>
-              </div>
+          <div className="card">
+            <div className="text">
+              <h2>Tennis</h2>
+              <p>
+                A fast-paced game of skill and precision, played on courts
+                worldwide, where athletes showcase agility, power, and mental
+                focus in thrilling matches
+              </p>
             </div>
-
-            <div className="card">
-              <img src={weightImage} alt="Weightlifting" />
-              <div className="text">
-                <p>
-                  <h2>Weightlifting</h2>
-                  <br /> A strength-based discipline focusing on power and
-                  precision, where athletes lift heavy loads with controlled
-                  technique, showcasing raw strength, dedication, and mental
-                  fortitude
-                </p>
-              </div>
+            <img src={tennisImage} alt="Tennis" />
+          </div>
+          <div className="card">
+            <img src={golfImage} alt="Golf" />
+            <div className="text">
+              <h2>Golf</h2>
+              <p>
+                A serene sport played amidst picturesque landscapes, where
+                players demonstrate precision, strategy, and concentration,
+                aiming for the perfect shot across lush fairways and challenging
+                greens.
+              </p>
             </div>
-
-            <div className="card">
-              <img src={basketballImage} alt="Basketball" />
-              <div className="text">
-                <p>
-                  <h2>Basketball</h2>
-                  <br /> A dynamic sport characterized by fast-paced action,
-                  teamwork, and skillful ball handling, as players aim to score
-                  points by shooting hoops, thrilling fans with electrifying
-                  plays and intense competition.
-                </p>
-              </div>
+          </div>
+          <div className="card">
+            <div className="text">
+              <h2>Formula One</h2>
+              <p>
+                The pinnacle of motorsport, featuring cutting-edge technology
+                and lightning-fast cars racing on iconic tracks worldwide,
+                thrilling fans with speed, skill, and adrenaline-fueled
+                competition
+              </p>
+            </div>
+            <img src={formulaOneImage} alt="Formula One" />
+          </div>
+          <div className="card">
+            <img src={swimmingImage} alt="Swimming" />
+            <div className="text">
+              <h2>Swimming</h2>
+              <p>
+                A graceful sport that embraces the water, showcasing
+                athleticism, endurance, and technique as swimmers glide through
+                pools with fluidity, power, and determination.
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <div className="text">
+              <h2>Weightlifting</h2>
+              <p>
+                A strength-based discipline focusing on power and precision,
+                where athletes lift heavy loads with controlled technique,
+                showcasing raw strength, dedication, and mental fortitude
+              </p>
+            </div>
+            <img src={weightImage} alt="Weightlifting" />
+          </div>
+          <div className="card">
+            <img src={basketballImage} alt="Basketball" />
+            <div className="text">
+              <h2>Basketball</h2>
+              <p>
+                A dynamic sport characterized by fast-paced action, teamwork,
+                and skillful ball handling, as players aim to score points by
+                shooting hoops, thrilling fans with electrifying plays and
+                intense competition.
+              </p>
             </div>
           </div>
         </div>
