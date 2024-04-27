@@ -539,6 +539,66 @@ input[type="submit"]:hover {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+.sponsers {
+  padding: 100px;
+}
+.sponsers-image {
+  text-align: center;
+  padding: 40px;
+  margin: 20px 20px 20px 20px;
+}
+.sponsers-image span img {
+  padding: 10px;
+  filter: grayscale(1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.sponsers-image span img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes colorChange {
+  0% {
+    color: #3498db;
+  } /* Light blue color */
+  25% {
+    color: #2ecc71;
+  } /* Green color */
+  50% {
+    color: #e74c3c;
+  } /* Red color */
+  75% {
+    color: #f39c12;
+  } /* Orange color */
+  100% {
+    color: #3498db;
+  } /* Back to light blue color */
+}
+
+.jumping-fading-text {
+  animation: jump 1s infinite alternate, fadeIn 1s forwards,
+    colorChange 5s infinite; /* Color change duration set to 5s */
+}
 
 .logout-button:hover {
   background-color: #d32f2f; /* Darker red on hover */
@@ -609,13 +669,13 @@ input[type="submit"]:hover {
     left: 87%;
   }
   .upcoming-item {
-    height: 400px;
+    height: auto;
   }
   .text-overlay {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
-    transition: transform(-25%, -50%);
+    transition: transform(-50%, -50%);
   }
   .text-overlay h3 {
     font-size: 15px;

@@ -11,6 +11,17 @@ import formulaOneImage from "./IMG/formula one.jpg";
 import swimmingImage from "./IMG/swimming.jpg";
 import weightImage from "./IMG/weight.jpeg";
 import basketballImage from "./IMG/basketball.jpg";
+import zunoImage from "./IMG/zuno.png";
+import bbImage from "./IMG/bb.png";
+import baithackImage from "./IMG/baithack.png";
+import prepbytesImage from "./IMG/prepbytes.png";
+import snapchatImage from "./IMG/snapchat.png";
+import jetBrainsImage from "./IMG/jetBrains.png";
+import codingNinjaImage from "./IMG/codingNinja.png";
+import sawolabsImage from "./IMG/sawolabs.png";
+import devfolioImage from "./IMG/devfolio.png";
+import gfkImage from "./IMG/gfk.png";
+import addaImage from "./IMG/adda.png";
 const Home = () => {
   return (
     <div>
@@ -156,6 +167,44 @@ const Home = () => {
           </div>
         </section>
       </section>
+      <div className="sponsers-image">
+        <div className="sponsor-container">
+          <h1 className="jumping-fading-text">Our Sponsors</h1>
+        </div>
+        <span>
+          <img src={zunoImage} alt="Zuno" width="250px" />
+        </span>
+        <span>
+          <img src={bbImage} alt="BB" width="250px" />
+        </span>
+        <span>
+          <img src={baithackImage} alt="Baithack" width="250px" />
+        </span>
+        <span>
+          <img src={prepbytesImage} alt="Prepbytes" width="250px" />
+        </span>
+        <span>
+          <img src={snapchatImage} alt="Snapchat" width="250px" />
+        </span>
+        <span>
+          <img src={jetBrainsImage} alt="JetBrains" width="250px" />
+        </span>
+        <span>
+          <img src={codingNinjaImage} alt="Coding Ninja" width="250px" />
+        </span>
+        <span>
+          <img src={sawolabsImage} alt="Sawolabs" width="250px" />
+        </span>
+        <span>
+          <img src={devfolioImage} alt="Devfolio" width="250px" />
+        </span>
+        <span>
+          <img src={gfkImage} alt="GFK" width="250px" />
+        </span>
+        <span>
+          <img src={addaImage} alt="Adda" width="250px" />
+        </span>
+      </div>
       <section className="sec-7" id="int">
         <center>
           <p style={{ color: "#777", fontSize: "15px" }}>
