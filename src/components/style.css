@@ -244,13 +244,8 @@ video {
 }
 
 .upcoming-section {
-  text-align: center; /* Center align the content */
+  text-align: center;
 }
-
-.upcoming-item {
-  margin-bottom: 20px; /* Add spacing between items */
-}
-
 .background-image {
   position: relative;
   display: inline-block;
@@ -268,10 +263,10 @@ video {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 10px; /* Rounded corners for the overlay */
-  width: 80%; /* Adjust width as needed */
+  border-radius: 10px;
+  width: 80%;
 }
 
 .text-overlay h3 {
@@ -616,11 +611,17 @@ input[type="submit"]:hover {
   .upcoming-item {
     height: 400px;
   }
+  .text-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transition: transform(-25%, -50%);
+  }
   .text-overlay h3 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .text-overlay input[type="button"] {
-    padding: 5px 10px; /* Adjusted padding */
+    padding: 5px 8px; /* Adjusted padding */
     font-size: 0.9rem;
   }
 }
@@ -693,19 +694,12 @@ input[type="submit"]:hover {
   }
 }
 .instagram-story-section {
-  padding: 10px;
-  border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #ddd;
   text-align: center;
   margin: auto;
+  border-bottom: 2px solid #ddd;
+  color: #ddd;
 }
-
-.instagram-story-section h2 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-}
-
 .story-container {
   display: flex;
   flex-wrap: nowrap;
@@ -713,11 +707,9 @@ input[type="submit"]:hover {
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-
 .story-container::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none;
 }
-
 .story {
   margin-top: 15px;
   margin-right: 15px;
@@ -725,20 +717,18 @@ input[type="submit"]:hover {
   display: block;
   justify-content: center;
 }
-
 .story img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 5px;
+  border: 3px solid red;
 }
-
 .username {
-  font-size: 0.9rem;
-  color: #555;
+  font-size: 15px;
+  color: #ddd;
 }
-
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .story {
@@ -751,7 +741,7 @@ input[type="submit"]:hover {
     height: 80px;
   }
   .username {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 

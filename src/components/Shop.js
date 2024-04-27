@@ -70,11 +70,11 @@ const SportsProducts = () => {
           <div className="story">
             <img
               src={
-                "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b0fb9b84a6cd4707b489ae3d0129b96c_9366/3-Stripes_Rubber_Mini_Basketball_Orange_HM4971_01_standard.jpg"
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy0JMy-jLq020_X75y4Md5dUuOoR1G8uQFl9ASqqL3SA&s"
               }
-              alt="Basketball"
+              alt="SS"
             />
-            <p className="username">Basketball</p>
+            <p className="username">SS</p>
           </div>
           <div className="story">
             <img
